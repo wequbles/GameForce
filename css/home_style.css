@@ -924,7 +924,7 @@ body::-webkit-scrollbar {
 
 .roadmap__cont {
   width: 100vw;
-  height: 110vmin;
+  height: 102vmin;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -951,9 +951,20 @@ body::-webkit-scrollbar {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   background-image: url("../img/roadmap.png");
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/*@media (max-height: 900px){}*/
+@media (orientation: landscape) {
+  .roadmap__row {
+    background-size: contain;
+  }
+}
+@media (orientation: portrait) {
+  .roadmap__cont {
+    height: 100vmin;
+  }
+  .roadmap__row {
+    background-size: cover;
+  }
+}
