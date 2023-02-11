@@ -967,6 +967,7 @@ body::-webkit-scrollbar {
     height: 90vmin;
   }
   .roadmap__row {
+    margin: 30px 0 0;
     background-size: cover;
   }
 }
