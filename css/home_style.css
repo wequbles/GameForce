@@ -755,17 +755,24 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   padding: 12px 40px;
   font-weight: 600;
-  font-size: 40px;
+  font-size: calc(30px + 0.6944444444vw);
   line-height: 48px;
 }
 
-@media (max-width: 463px) {
+@media (max-width: 767px) {
   .top__btn {
     padding: 9px 30px;
-    font-size: 30px;
+    font-size: calc(30px + 17 * (100vw - 320px) / 1440);
     line-height: 36px;
   }
 }
+/*@media(max-width: 463px){
+	.top__btn{
+		padding: 9px 30px;
+		font-size: 30px;
+		line-height: 36px;
+	}
+}*/
 .news {
   padding: 48px 20px 0;
 }
@@ -925,16 +932,7 @@ body::-webkit-scrollbar {
 }
 
 .roadmap__cont {
-  width: 100vw;
-  height: 102vmin;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .roadmap__title {
@@ -947,27 +945,22 @@ body::-webkit-scrollbar {
 
 .roadmap__row {
   margin: 48px 0 0;
-  width: 100%;
-  max-height: 912px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  background-image: url("../img/roadmap.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-@media (orientation: landscape) {
-  .roadmap__row {
-    background-size: contain;
-  }
+.roadmap__row img {
+  max-width: 100%;
 }
-@media (orientation: portrait) {
-  .roadmap__cont {
-    height: 90vmin;
-  }
-  .roadmap__row {
-    margin: 30px 0 0;
-    background-size: cover;
-  }
+
+.roadmap__goals {
+  max-width: 928px;
+  max-height: 700px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(100px, 100px))[3];
+  -ms-grid-columns: (minmax(176px, 176px))[3];
+      grid-template: repeat(3, minmax(100px, 100px))/repeat(3, minmax(176px, 176px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
