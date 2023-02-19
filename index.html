@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>BattlePoints | Home</title>
+		<title>BattlePoints | Главная</title>
 		<link rel="stylesheet" href="css/home_style.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<meta charset="UTF-8">
@@ -9,7 +9,36 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="content">
+<div class="modal_wrapper">
+	<div class="modal_content">
+		<div class="modal">
+			<button class="modal__close_btn"></button>
+			<div class="modal__cont">
+				<div class="modal__title _sign-up">
+					Уже есть аккаунт?
+					<button class="title__btn">Войти</button>
+				</div>
+				<div class="modal__title _log-in">
+					Ещё нет аккаунта?
+					<button class="title__btn">Зарегистрироваться</button>
+				</div>
+				<input type="text" class="modal__input" placeholder="Логин">
+				<div class="input__label">Неверный логин или пароль!</div>
+				<input type="text" class="modal__input" placeholder="Ник">
+				<div class="input__label">Этот ник уже занят!</div>
+				<input type="text" class="modal__input" placeholder="Почта">
+				<div class="input__label">Неверный адрес!</div>
+				<input type="password" class="modal__input" placeholder="Пароль">
+					<input id="view" type="checkbox" class="modal__checkbox">
+					<label for="view" class="checkbox__label">Показать пароль</label>
+				<button class="password_btn">Забыл пароль?</button>
+				<input type="password" class="modal__input" placeholder="Подтверждение пароля">
+				<div class="button__container_c"><form action=""><button class="modal__btn blue_btn">Регистрация</button></form></div>
+				<div class="button__container_c"><form action=""><button class="modal__btn blue_btn">Войти</button></form></div>
+			</div>
+		</div>
+	</div>
+</div>			<div class="content">
 				<div class="top">
 					<form action="download.html"><button class="top__btn blue_btn">Начать играть</button></form>
 				</div>
@@ -235,7 +264,7 @@
 				<form action=""><button class="column__btn">Новости</button></form>
 			</div>
 			<div class="column">
-				<form action=""><button class="column__title">Сервера</button></form>
+				<form action="servers.html"><button class="column__title">Сервера</button></form>
 				<form action=""><button class="column__btn">BattlePoints</button></form>
 				<form action=""><button class="column__btn">MafiaCraft</button></form>
 			</div>
