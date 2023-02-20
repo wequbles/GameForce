@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-<div class="menu">
+<div id="menu" class="menu">
 	<div class="menu__logo"></div>
 	<div class="menu__navigation">
 		<div class="menu__btn"></div>
@@ -18,6 +18,35 @@
 	<div class="authorization">
 		<div class="menu__btn blue_btn"></div>
 		<div class="menu__btn"></div>
+	</div>
+</div><div id="form" class="modal_wrapper">
+	<div class="modal_content">
+		<div class="modal">
+			<form action="#menu"><button class="modal__close_btn"></button></form>
+			<div class="modal__cont">
+				<div class="modal__title _sign-up">
+					Уже есть аккаунт?
+					<button class="title__btn">Войти</button>
+				</div>
+				<div class="modal__title _log-in">
+					Ещё нет аккаунта?
+					<button class="title__btn">Зарегистрироваться</button>
+				</div>
+				<input type="text" class="modal__input" placeholder="Логин">
+				<div class="input__label">Неверный логин или пароль!</div>
+				<input type="text" class="modal__input" placeholder="Ник">
+				<div class="input__label">Этот ник уже занят!</div>
+				<input type="text" class="modal__input" placeholder="Почта">
+				<div class="input__label">Неверный адрес!</div>
+				<input type="password" class="modal__input" placeholder="Пароль">
+					<input id="view" type="checkbox" class="modal__checkbox">
+					<label for="view" class="checkbox__label">Показать пароль</label>
+				<button class="password_btn">Забыл пароль?</button>
+				<input type="password" class="modal__input" placeholder="Подтверждение пароля">
+				<div class="button__container_c"><form action=""><button class="modal__btn blue_btn">Регистрация</button></form></div>
+				<div class="button__container_c"><form action=""><button class="modal__btn blue_btn">Войти</button></form></div>
+			</div>
+		</div>
 	</div>
 </div>			<div class="content">
 				<div class="title">
@@ -40,39 +69,40 @@
 				<img src="img/footer__logo.svg" alt="">
 			</div>
 			<div class="footer__social_links">
-				<form action=""><button class="discord soc_btn"></button></form>
-				<form action=""><button class="telegram soc_btn"></button></form>
-				<form action=""><button class="youtube soc_btn"></button></form>
+				<form action="https://discord.gg/fnP3SRTJTq" target="_blank"><button class="discord soc_btn"></button></form>
+				<form action="https://t.me/battlepoints_gf" target="_blank"><button class="telegram soc_btn"></button></form>
+				<form action="https://www.youtube.com/channel/UC3scna7gf1Q1LZPTHafkPBQ" target="_blank"><button class="youtube soc_btn"></button></form>
 			</div>
 		</div>
 		<div class="footer__navigator">
 			<div class="column">
-				<form action=""><button class="column__title">BattlePoints</button></form>
-				<form action=""><button class="column__btn">Скачать</button></form>
+				<form action="index.html"><button class="column__title">BattlePoints</button></form>
+				<form action="download.html"><button class="column__btn">Скачать</button></form>
 				<form action=""><button class="column__btn">Новости</button></form>
 			</div>
 			<div class="column">
 				<form action="servers.html"><button class="column__title">Сервера</button></form>
-				<form action=""><button class="column__btn">BattlePoints</button></form>
-				<form action=""><button class="column__btn">MafiaCraft</button></form>
+				<form action="index.html"><button class="column__btn">BattlePoints</button></form>
+				<form action="https://mafiacraft.ru/"><button class="column__btn">MafiaCraft</button></form>
 			</div>
 			<div class="column">
-				<form action=""><button class="column__title">О нас</button></form>
+				<form action="about.html"><button class="column__title">О нас</button></form>
 				<form action=""><button class="column__btn">Команда</button></form>
-				<form action=""><button class="column__btn">Манифест</button></form>
-				<form action=""><button class="column__btn">Для СМИ</button></form>
-				<form action=""><button class="column__btn">Контакты</button></form>
+				<form action="mission.html"><button class="column__btn">Манифест</button></form>
+				<form action="press.html"><button class="column__btn">Для СМИ</button></form>
+				<form action="contacts.html"><button class="column__btn">Контакты</button></form>
 			</div>
 			<div class="column">
-				<form action=""><button class="column__title">Документы</button></form>
-				<form action=""><button class="column__btn">Файлы Cookie</button></form>
-				<form action=""><button class="column__btn">Лицензионное соглашение</button></form>
-				<form action=""><button class="column__btn">Политика конфиденциальности</button></form>
+				<form action="doc.html"><button class="column__title">Документы</button></form>
+				<form action="cookie.html"><button class="column__btn">Файлы Cookie</button></form>
+				<form action="license.html"><button class="column__btn">Лицензионное соглашение</button></form>
+				<form action="privacy.html"><button class="column__btn">Политика конфиденциальности</button></form>
 			</div>
 		</div>
-		<div class="footer__text">© 2019-2023 GameForse и BattlePoints, Все права защищены! Оригинальные права принадлежат <a href="">Mojang AB</a><br>Сайт разработан <a href="">Zoma</a> и создан <a href="">Margaw</a>.</div>
+		<div class="footer__text">© 2019-2023 GameForse и BattlePoints, Все права защищены! Оригинальные права принадлежат <a href="https://www.minecraft.net" target="_blank">Mojang AB</a><br>Сайт разработан <a href="" target="_blank">Zoma</a> и создан <a href="" target="_blank">Margaw</a>.</div>
 		<div class="footer__text_mobile">GameForse и BattlePoints © 2019-2023</div>
 	</div>
 </div>		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
