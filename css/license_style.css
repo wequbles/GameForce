@@ -226,32 +226,29 @@ body::-webkit-scrollbar {
 }
 
 .title {
+  padding: 56px 0;
   margin: 0 auto;
   max-width: 1440px;
-  height: 160px;
+  min-height: 160px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  white-space: nowrap;
+  text-align: center;
 }
 
 .title__text {
+  white-space: nowrap;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
+}
+
+.subtitle {
+  max-width: 725px;
+  margin: 14px auto 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .button__container_c {
@@ -654,9 +651,16 @@ body::-webkit-scrollbar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 52px;
 }
 
+@media (max-width: 767px) {
+  .document {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 .document__sheet {
   padding: 40px 60px;
   max-width: 1000px;
@@ -675,6 +679,16 @@ body::-webkit-scrollbar {
   white-space: nowrap; /*раздельные элементы текста которые должны быть перенесенны целиком*/
 }
 
+@media (max-width: 767px) {
+  .document__sheet {
+    padding: 40px 48px;
+  }
+}
+@media (max-width: 375px) {
+  .document__sheet {
+    padding: 40px 15px;
+  }
+}
 .sheet__title { /*главный заголовок*/
   font-weight: 700;
   font-size: 40px;
@@ -706,7 +720,9 @@ body::-webkit-scrollbar {
 }
 
 .document__menu {
+  margin: 0 0 0 52px;
   padding: 24px 0 0;
+  max-width: 250px;
   min-width: 196px;
   font-weight: 300;
   font-size: 16px;
@@ -721,6 +737,18 @@ body::-webkit-scrollbar {
   gap: 8px;
 }
 
+@media (max-width: 767px) {
+  .document__menu {
+    padding: 0;
+    margin: 0 0 40px 60px;
+  }
+}
+@media (max-width: 256px) {
+  .document__menu {
+    padding: 0;
+    margin: 0 0 40px 15px;
+  }
+}
 .menu__point { /*пункт меню*/ }
 
 .menu__subpoint { /*подпункт*/

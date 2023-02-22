@@ -226,32 +226,29 @@ body::-webkit-scrollbar {
 }
 
 .title {
+  padding: 56px 0;
   margin: 0 auto;
   max-width: 1440px;
-  height: 160px;
+  min-height: 160px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  white-space: nowrap;
+  text-align: center;
 }
 
 .title__text {
+  white-space: nowrap;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
+}
+
+.subtitle {
+  max-width: 725px;
+  margin: 14px auto 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .button__container_c {
@@ -645,4 +642,79 @@ body::-webkit-scrollbar {
 
 .title {
   background-image: url("../img/title.jpg");
+}
+
+.contacts {
+  margin: 48px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.contacts * {
+  -webkit-transition: all 0.12s ease-in-out;
+  transition: all 0.12s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.contacts__card_1:hover .contacts__card, .contacts__card_2:hover .contacts__card, .contacts__card_3:hover .contacts__card {
+  background: #181818;
+  -webkit-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.contacts__card_1:hover .contacts__img, .contacts__card_2:hover .contacts__img, .contacts__card_3:hover .contacts__img {
+  background: #0A9CEE;
+}
+
+.contacts__card {
+  padding: 20px;
+  width: 200px;
+  height: 307px;
+  border-radius: 6px;
+}
+
+.contacts__img {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  background: #181818;
+  border-radius: 6px;
+  position: relative;
+}
+
+.contacts__img img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.contacts__title {
+  word-wrap: break-word;
+  margin: 20px 0 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contacts__link {
+  margin: 20px 0 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0A9CEE;
 }
