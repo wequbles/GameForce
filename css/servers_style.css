@@ -670,7 +670,7 @@ body::-webkit-scrollbar {
 @media (max-width: 767px) {
   .servers__btn {
     height: 200px;
-    width: 90vw;
+    width: 95vw;
   }
   .servers__btn:hover {
     height: 225px;
