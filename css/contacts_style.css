@@ -226,7 +226,7 @@ body::-webkit-scrollbar {
 }
 
 .title {
-  padding: 56px 0;
+  padding: 56px 10px;
   margin: 0 auto;
   max-width: 1440px;
   min-height: 160px;
@@ -241,6 +241,7 @@ body::-webkit-scrollbar {
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -668,6 +669,7 @@ body::-webkit-scrollbar {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 96px;
   }
 }
 .contacts__card_1:hover .contacts__card, .contacts__card_2:hover .contacts__card, .contacts__card_3:hover .contacts__card {

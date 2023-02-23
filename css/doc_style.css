@@ -226,7 +226,7 @@ body::-webkit-scrollbar {
 }
 
 .title {
-  padding: 56px 0;
+  padding: 56px 10px;
   margin: 0 auto;
   max-width: 1440px;
   min-height: 160px;
@@ -241,6 +241,7 @@ body::-webkit-scrollbar {
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -678,12 +679,12 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-.documents__card_1:hover .documents__card, .documents__card_2:hover .documents__card, .documents__card_3:hover .documents__card {
+.documents__card_1 .documents__card:hover, .documents__card_2 .documents__card:hover, .documents__card_3 .documents__card:hover {
   background: #2C2C2C;
   -webkit-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);
 }
-.documents__card_1:hover .documents__link, .documents__card_2:hover .documents__link, .documents__card_3:hover .documents__link {
+.documents__card_1 .documents__link:hover, .documents__card_2 .documents__link:hover, .documents__card_3 .documents__link:hover {
   color: #0A9CEE;
 }
 
