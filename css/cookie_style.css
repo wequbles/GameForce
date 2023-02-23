@@ -648,6 +648,9 @@ body::-webkit-scrollbar {
   background: #181818;
   border: 2px solid #595959;
   border-radius: 6px;
+}
+
+.cookie_settings__1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,7 +673,7 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 767px) {
-  .cookie_settings {
+  .cookie_settings__1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -727,6 +730,45 @@ body::-webkit-scrollbar {
 }
 .cookie_settings__menu .checkbox input {
   display: none;
+}
+
+.cookie_settings__2 {
+  margin: 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .cookie_settings__2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+}
+.cookie_settings__btn {
+  padding: 8px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+._1 .blue_btn {
+  background: #595959;
+}
+._1 .blue_btn:hover {
+  background: #0c6da6;
+}
+._1 .blue_btn:active {
+  background: #181818;
+  color: #ececec;
 }
 
 .document {
