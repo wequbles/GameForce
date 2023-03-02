@@ -972,33 +972,30 @@ body::-webkit-scrollbar {
 
 .roadmap__img {
   margin: 48px 0 0;
+  width: 100vw;
+  height: 912px;
+  background-image: url("../img/roadmap/roadmap-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.roadmap__img img {
-  max-width: 100%;
+@media (max-width: 1025px) {
+  .roadmap__img {
+    height: 1313px;
+    background-image: url("../img/roadmap-tight/roadmap-4.png");
+  }
 }
-
-/*.roadmap__goals{
-	position: absolute;
-	left: 50%;
-	top: 78px + 106px;
-	transform: translate(-50.4%, 0);
-	max-width: 1140px;
-	margin: 48px auto 0;
-	display: grid;
-	grid-template: repeat(4, minmax(100px, 100px)) / repeat(3, minmax(176px, 176px));
-	row-gap: 100px;
-	column-gap: 200px;
-}*/
 .roadmap__goals {
+  width: 100vw;
   position: absolute;
-  left: 0;
+  left: -4px;
   top: 231px;
-  margin: 0 25.7%;
-  width: 48.33%;
 }
 
-.roadmap__goals_1, .roadmap__goals_2, .roadmap__goals_3, .roadmap__goals_4 {
+.roadmap__goals__cont {
+  width: 928px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,22 +1006,45 @@ body::-webkit-scrollbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 200px;
+     -moz-column-gap: 200px;
+          column-gap: 200px;
+  row-gap: 100px;
 }
 
-.roadmap__goals_2, .roadmap__goals_3, .roadmap__goals_4 {
-  margin: 100px 0 0;
+@media (max-width: 1025px) {
+  .roadmap__goals__cont {
+    width: 552px;
+  }
 }
-
 .goal {
-  max-width: 176px;
-  max-height: 100px;
+  width: 176px;
+  height: 100px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
+.goal__img {
+  -webkit-transition: all 0.28s ease-in-out;
+  transition: all 0.28s ease-in-out;
+}
+
 .goal__body {
   margin: 16.5px 0 0 20px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.goal:hover .goal__img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.goal:hover .goal__body {
+  -webkit-transform: scale(1.163, 1.179);
+          transform: scale(1.163, 1.179);
 }
 
 .goal__date {
