@@ -9,15 +9,26 @@
 	<body>
 		<div class="wrapper">
 <div id="menu" class="menu">
-	<div class="menu__logo"></div>
-	<div class="menu__navigation">
-		<div class="menu__btn"></div>
-		<div class="menu__btn"></div>
-		<div class="menu__btn"></div>
-	</div>
-	<div class="authorization">
-		<div class="menu__btn blue_btn"></div>
-		<div class="menu__btn"></div>
+	<div class="menu__cont">
+		<form action="index.html" class="menu__logo">
+			<button>
+				<picture>
+					<source srcset="img/menu__logo.png">
+					<img src="img/menu__logo.png" alt="">
+				</picture>
+			</button>
+		</form>
+		<div class="menu__navigation">
+			<form action="index.html"><button class="menu__btn">Главная<div class="underline"></div></button></form>
+			<form action="about.html"><button class="menu__btn">О проекте<div class="underline"></div></button></form>
+			<form action="servers.html"><button class="menu__btn">Сервера<div class="underline"></div></button></form>
+		</div>
+		<div class="authorization">
+			<form action="#form">
+				<button class="menu__btn blue_btn">Войти</button>
+				<button class="menu__btn">Регистрация<div class="underline"></div></button>
+			</form>
+		</div>
 	</div>
 </div><div id="form" class="modal_wrapper">
 	<div class="modal_content">
@@ -81,8 +92,8 @@
 		<div class="footer__1">
 			<div class="footer__logo">
 				<picture>
-					<source srcset="img/footer__logo.svg">
-					<img src="img/footer__logo.svg" alt="">
+					<source srcset="img/footer__logo.png">
+					<img src="img/footer__logo.png" alt="">
 				</picture>
 			</div>
 			<div class="footer__social_links">
