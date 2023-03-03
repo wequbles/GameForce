@@ -1081,30 +1081,41 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 @media (max-width: 1025px) {
   .roadmap__img {
     height: 1313px;
     background-image: url("../img/roadmap-tight/roadmap-4.png");
   }
 }
+@media (max-width: 625px) {
+  .roadmap__img {
+    height: 700px;
+  }
+}
+
 .roadmap__goals {
   width: 100vw;
   position: absolute;
   left: -4px;
   top: 231px;
 }
+@media (max-width: 625px) {
+  .roadmap__goals {
+    top: 183px;
+  }
+}
 
 .roadmap__goals__cont {
   width: 928px;
+  height: 700px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1115,12 +1126,23 @@ body::-webkit-scrollbar {
           column-gap: 200px;
   row-gap: 100px;
 }
-
 @media (max-width: 1025px) {
   .roadmap__goals__cont {
     width: 552px;
+    height: 1100px;
   }
 }
+@media (max-width: 625px) {
+  .roadmap__goals__cont {
+    width: 288px;
+    height: 583px;
+    -webkit-column-gap: 100px;
+       -moz-column-gap: 100px;
+            column-gap: 100px;
+    row-gap: 50px;
+  }
+}
+
 .goal {
   width: 176px;
   height: 100px;
@@ -1128,10 +1150,31 @@ body::-webkit-scrollbar {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+@media (max-width: 625px) {
+  .goal {
+    width: 100px;
+    height: 50px;
+  }
+}
 
 .goal__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: all 0.28s ease-in-out;
   transition: all 0.28s ease-in-out;
+}
+@media (max-width: 625px) {
+  .goal__img img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .goal__body {
@@ -1167,9 +1210,33 @@ body::-webkit-scrollbar {
   margin: 4px 0 0;
 }
 
+@media (max-width: 625px) {
+  .goal__body {
+    margin: 8.25px 0 0 10px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  .goal__date {
+    margin: 0 0 4px;
+    font-size: 7px;
+    line-height: 8.5px;
+  }
+  .goal__tasks {
+    font-size: 8px;
+    line-height: 9.5px;
+  }
+  .goal__task {
+    margin: 2px 0 0;
+  }
+}
 ._creation, ._sound, ._object {
   padding: 0 0 0 20px;
   position: relative;
+}
+@media (max-width: 625px) {
+  ._creation, ._sound, ._object {
+    padding: 0 0 0 10px;
+  }
 }
 
 .goal__task:before {
@@ -1182,6 +1249,12 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+}
+@media (max-width: 625px) {
+  .goal__task:before {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 ._creation:before {
