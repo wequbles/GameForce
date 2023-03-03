@@ -257,9 +257,111 @@ body::-webkit-scrollbar {
 }
 
 .menu {
+  padding: 8px 0;
+  background: rgba(44, 44, 44, 0.8);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 100vw;
   position: fixed;
   left: 0;
   top: 0;
+}
+
+.menu__cont {
+  max-width: 1312px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 51px;
+}
+
+.menu__logo {
+  margin-right: auto;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  -webkit-transition: all 0.17s ease-in-out;
+  transition: all 0.17s ease-in-out;
+}
+.menu__logo img {
+  height: 40px;
+  width: 40px;
+  -webkit-transition: all 0.17s ease-in-out;
+  transition: all 0.17s ease-in-out;
+}
+
+.menu__logo:hover {
+  background: rgba(200, 33, 41, 0.5);
+}
+.menu__logo:hover img {
+  height: 32px;
+  width: 32px;
+}
+
+.menu__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+.menu__navigation .menu__btn {
+  text-transform: uppercase;
+}
+
+.authorization .menu__btn:hover .underline {
+  height: 2px;
+  margin-bottom: -2px;
+  border-radius: 0px 0px 1px 1px;
+}
+.authorization .blue_btn {
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.authorization form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+.menu__btn {
+  white-space: nowrap;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.underline {
+  width: 16px;
+  height: 3px;
+  margin: 0 auto;
+  border-radius: 0px 0px 2px 2px;
+  margin-bottom: -3px;
+  background: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__btn:hover .underline {
+  -webkit-transform: translate(-4px, 0);
+          transform: translate(-4px, 0);
+  width: 110%;
+  background: #D9D9D9;
 }
 
 .footer {
