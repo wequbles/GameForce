@@ -38,7 +38,7 @@ form {
   font-size: 0;
 }
 
-input, textarea, button, select {
+input, textarea, button, select, a {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -295,7 +295,7 @@ body::-webkit-scrollbar {
           align-items: center;
   gap: 51px;
 }
-@media (max-width: 899px) {
+@media (max-width: 767px) {
   .menu__cont {
     gap: 25.5px;
   }
@@ -347,7 +347,7 @@ body::-webkit-scrollbar {
 .menu__navigation .menu__btn {
   text-transform: uppercase;
 }
-@media (max-width: 899px) {
+@media (max-width: 1240px) {
   .menu__navigation {
     display: none;
   }
@@ -357,7 +357,7 @@ body::-webkit-scrollbar {
   height: 40px;
   width: 40px;
 }
-@media (min-width: 899px) {
+@media (min-width: 1240px) {
   .menu_burger img {
     display: none;
   }
@@ -604,6 +604,7 @@ body::-webkit-scrollbar {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -800,12 +801,13 @@ body::-webkit-scrollbar {
 }
 
 .servers {
+  height: 696px;
   text-align: center;
+  position: relative;
 }
 
 .servers__btn {
-  display: inline-block;
-  margin: 48px auto 0;
+  display: block;
   height: 300px;
   width: 62.5vw;
   background-repeat: no-repeat;
@@ -832,7 +834,12 @@ body::-webkit-scrollbar {
   }
 }
 .battlepoints {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
   background-image: url("../img/battlepoints.jpg");
 }
 
@@ -853,7 +860,12 @@ body::-webkit-scrollbar {
 }
 
 .mafiacraft {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 396px;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
   background-image: url("../img/mafiacraft.jpg");
 }
 

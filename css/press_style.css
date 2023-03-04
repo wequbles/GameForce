@@ -38,7 +38,7 @@ form {
   font-size: 0;
 }
 
-input, textarea, button, select {
+input, textarea, button, select, a {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -295,7 +295,7 @@ body::-webkit-scrollbar {
           align-items: center;
   gap: 51px;
 }
-@media (max-width: 899px) {
+@media (max-width: 767px) {
   .menu__cont {
     gap: 25.5px;
   }
@@ -347,7 +347,7 @@ body::-webkit-scrollbar {
 .menu__navigation .menu__btn {
   text-transform: uppercase;
 }
-@media (max-width: 899px) {
+@media (max-width: 1240px) {
   .menu__navigation {
     display: none;
   }
@@ -357,7 +357,7 @@ body::-webkit-scrollbar {
   height: 40px;
   width: 40px;
 }
-@media (min-width: 899px) {
+@media (min-width: 1240px) {
   .menu_burger img {
     display: none;
   }
@@ -604,6 +604,7 @@ body::-webkit-scrollbar {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -799,11 +800,16 @@ body::-webkit-scrollbar {
   background-image: url("../img/bg.jpg");
 }
 
-.documents__card_1 {
+.documents {
   margin: 48px 0 0;
+}
+.documents * {
+  -webkit-transition: all 0.12s ease-in-out;
+  transition: all 0.12s ease-in-out;
 }
 
 .documents__card {
+  display: block;
   margin: 0 auto;
   padding: 20px;
   max-width: 420px;
@@ -813,10 +819,13 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-.documents__card:hover {
+.documents__card_1:hover {
   background: #2C2C2C;
   -webkit-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.documents__card_1:hover .documents__link {
+  color: #0A9CEE;
 }
 
 .documents__title {
@@ -840,8 +849,4 @@ body::-webkit-scrollbar {
   font-size: 24px;
   line-height: 29px;
   color: #0C6DA6;
-}
-
-.documents__link:hover {
-  color: #0A9CEE;
 }
