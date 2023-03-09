@@ -278,11 +278,6 @@ body::-webkit-scrollbar {
   /*position: fixed;
   width: 100vw;*/
 }
-@media (max-width: 767px) {
-  .menu {
-    padding: 8px 34px 8px 32px;
-  }
-}
 
 .menu__cont {
   max-width: 1312px;
@@ -307,7 +302,7 @@ body::-webkit-scrollbar {
 }
 
 .menu__logo {
-  margin-right: auto;
+  margin: 0 auto 0 0;
   height: 40px;
   width: 40px;
   display: -webkit-box;
@@ -329,6 +324,11 @@ body::-webkit-scrollbar {
   -webkit-transition: all 0.17s ease-in-out;
   transition: all 0.17s ease-in-out;
 }
+@media (max-width: 645px) {
+  .menu__logo {
+    margin: 0 auto;
+  }
+}
 
 .menu__logo:hover {
   background: rgba(200, 33, 41, 0.5);
@@ -347,7 +347,7 @@ body::-webkit-scrollbar {
 .menu__navigation .menu__btn {
   text-transform: uppercase;
 }
-@media (max-width: 1240px) {
+@media (max-width: 645px) {
   .menu__navigation {
     display: none;
   }
@@ -357,38 +357,52 @@ body::-webkit-scrollbar {
   height: 40px;
   width: 40px;
 }
-@media (min-width: 1240px) {
+@media (min-width: 645px) {
   .menu_burger img {
     display: none;
   }
 }
 
-.authorization .menu__btn:hover .underline {
-  height: 2px;
-  margin-bottom: -2px;
-  border-radius: 0px 0px 1px 1px;
-}
-.authorization .blue_btn {
-  padding: 8px 20px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
 .authorization form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
 }
+.authorization .blue_btn {
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
 @media (max-width: 767px) {
+  .authorization .blue_btn {
+    display: none;
+  }
+}
+.authorization .menu__signin img {
+  height: 32px;
+  width: 32px;
+}
+@media (min-width: 767px) {
+  .authorization .menu__signin {
+    display: none;
+  }
+}
+.authorization .registration_btn {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+}
+@media (max-width: 1024px) {
   .authorization .registration_btn {
     display: none;
   }
 }
-@media (max-width: 424px) {
-  .authorization {
-    display: none;
-  }
+.authorization .menu__btn:hover .underline {
+  height: 2px;
+  margin-bottom: -2px;
+  border-radius: 0px 0px 1px 1px;
 }
 
 .menu__btn {
