@@ -108,6 +108,7 @@ body::-webkit-scrollbar {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  margin: 0 0 48px 0;
 }
 
 /*cyrillic*/
@@ -432,7 +433,7 @@ body::-webkit-scrollbar {
 
 .footer {
   background-color: #181818;
-  padding: 64px 10px 16px;
+  padding: 16px 10px 16px;
 }
 
 .footer__cont {
@@ -813,11 +814,10 @@ body::-webkit-scrollbar {
 
 .cookie_settings {
   margin: 48px auto 0;
-  padding: 24px 40px;
-  max-width: 862px;
+  padding: 40px;
+  max-width: 1240px;
   background: #181818;
-  border: 2px solid #595959;
-  border-radius: 6px;
+  border-radius: 16px;
 }
 
 .cookie_settings__1 {
@@ -838,8 +838,10 @@ body::-webkit-scrollbar {
 }
 
 .cookie_settings__menu {
-  margin-left: auto;
-  max-width: 400px;
+  margin-left: 130px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 @media (max-width: 767px) {
@@ -865,11 +867,11 @@ body::-webkit-scrollbar {
 }
 
 .cookie_settings__menu .checkbox {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.02em;
-  padding: 0 24px 0 0;
+  padding: 0 48px 0 0;
   position: relative;
 }
 .cookie_settings__menu .checkbox:after {
@@ -978,6 +980,12 @@ body::-webkit-scrollbar {
 }
 .document__sheet span {
   white-space: nowrap; /*раздельные элементы текста которые должны быть перенесенны целиком*/
+}
+.document__sheet a {
+  color: #0C6DA6;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 @media (max-width: 767px) {

@@ -108,6 +108,7 @@ body::-webkit-scrollbar {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  margin: 0 0 48px 0;
 }
 
 /*cyrillic*/
@@ -432,7 +433,7 @@ body::-webkit-scrollbar {
 
 .footer {
   background-color: #181818;
-  padding: 64px 10px 16px;
+  padding: 16px 10px 16px;
 }
 
 .footer__cont {
@@ -822,6 +823,7 @@ body::-webkit-scrollbar {
 }
 
 .servers__btn {
+  background-color: yellow;
   display: block;
   height: 300px;
   width: 62.5vw;
@@ -835,7 +837,7 @@ body::-webkit-scrollbar {
 
 .servers__btn:hover {
   height: 325px;
-  width: 67.7083vw;
+  /*width: 67.7083vw;*/
 }
 
 @media (max-width: 767px) {
@@ -845,7 +847,7 @@ body::-webkit-scrollbar {
   }
   .servers__btn:hover {
     height: 225px;
-    width: 95vw;
+    /*width: 95vw;*/
   }
 }
 .battlepoints {

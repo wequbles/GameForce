@@ -108,6 +108,7 @@ body::-webkit-scrollbar {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  margin: 0 0 48px 0;
 }
 
 /*cyrillic*/
@@ -432,7 +433,7 @@ body::-webkit-scrollbar {
 
 .footer {
   background-color: #181818;
-  padding: 64px 10px 16px;
+  padding: 16px 10px 16px;
 }
 
 .footer__cont {
@@ -848,6 +849,12 @@ body::-webkit-scrollbar {
 }
 .document__sheet span {
   white-space: nowrap; /*раздельные элементы текста которые должны быть перенесенны целиком*/
+}
+.document__sheet a {
+  color: #0C6DA6;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 @media (max-width: 767px) {
