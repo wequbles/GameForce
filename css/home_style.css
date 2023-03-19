@@ -271,7 +271,7 @@ body::-webkit-scrollbar {
 }
 
 .menu {
-  padding: 8px 68px 8px 64px;
+  padding: 8px 4% 8px 4%;
   background: rgba(44, 44, 44, 0.8);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
