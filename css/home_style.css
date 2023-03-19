@@ -275,8 +275,8 @@ body::-webkit-scrollbar {
   background: rgba(44, 44, 44, 0.8);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  /*position: fixed;
-  width: 100vw;*/
+  /*position: fixed;*/
+  width: 100vw;
 }
 
 .menu__cont {
@@ -431,6 +431,7 @@ body::-webkit-scrollbar {
 }
 
 .footer {
+  background-color: #181818;
   padding: 64px 10px 16px;
 }
 
