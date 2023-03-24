@@ -15,3 +15,21 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+
+var document__menu = document.querySelector('#document__menu');
+
+window.addEventListener('scroll', function() {
+	if (window.scrollY >= document__menu.offsetTop) {
+		document__menu.style.position = 'fixed';
+		document__menu.style.top = 0;
+	}
+	else {
+		document__menu.style.position = 'static';
+	}
+	var footer = document.querySelector('#footer');
+	if (footer.offsetTop - window.scrollY <= document__menu.offsetHeight) {
+		document__menu.style.top = footer.offsetTop - window.scrollY - document__menu.offsetHeight + 'px';
+	}
+});
+
