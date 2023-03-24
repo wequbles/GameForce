@@ -1031,11 +1031,10 @@ body::-webkit-scrollbar {
 .document__menu {
   margin: 0 0 0 52px;
   padding: 24px 0 0;
-  max-width: 250px;
-  min-width: 196px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  width: 196px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1058,6 +1057,34 @@ body::-webkit-scrollbar {
     margin: 0 0 40px 15px;
   }
 }
+/*.document__menu__cont_inner{
+	width: 196px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.aside-fixed--top .document__menu_inner{
+	position: fixed;
+	top: 0;
+}
+.aside-fixed--top .document__menu__cont_outer{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+.aside-fixed--top .document__menu__cont_outer{
+	max-width: 1248px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+}
+.aside-fixed--bottom .document__menu__cont_inner{
+	position: relative;
+}
+.aside-fixed--bottom .document__menu_inner{
+	position: absolute;
+}*/
 .menu__point { /*пункт меню*/ }
 
 .menu__subpoint { /*подпункт*/

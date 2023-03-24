@@ -823,7 +823,6 @@ body::-webkit-scrollbar {
 }
 
 .servers__btn {
-  background-color: yellow;
   display: block;
   height: 300px;
   width: 62.5vw;
@@ -860,6 +859,10 @@ body::-webkit-scrollbar {
   background-image: url("../img/battlepoints.jpg");
 }
 
+.battlepoints:hover {
+  background-image: url("../img/servers_gif.gif");
+}
+
 .battlepoints__img {
   position: absolute;
   bottom: 20px;
@@ -884,6 +887,10 @@ body::-webkit-scrollbar {
   right: 0;
   margin: 0 auto;
   background-image: url("../img/mafiacraft.jpg");
+}
+
+.mafiacraft:hover {
+  background-image: url("../img/servers_gif.gif");
 }
 
 .mafiacraft__text {

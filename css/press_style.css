@@ -832,6 +832,7 @@ body::-webkit-scrollbar {
   height: 260px;
   background: #181818;
   border-radius: 6px;
+  cursor: pointer;
   position: relative;
 }
 

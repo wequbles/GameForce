@@ -857,6 +857,7 @@ body::-webkit-scrollbar {
   width: 200px;
   height: 307px;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .contacts__img {
