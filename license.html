@@ -16,30 +16,34 @@
 				<img src="img/menu_burger.png" alt="">
 			</picture>
 		</div>
-		
-			<button class="menu__logo" id="menu__logo" oncontextmenu="location.href='press.html'; return false;" onclick="location.href='/';">
+		<div class="menu__logo"><a href="index.html">
+			<picture>
+				<source srcset="img/menu__logo.svg">
+				<img src="img/menu__logo.svg" alt="">
+			</picture>
+		</a></div>
+			<!--<button class="menu__logo" id="menu__logo" oncontextmenu="location.href='press.html'; return false;" onclick="location.href='index.html';">
 				<picture>
-					<source srcset="img/menu__logo.png">
+					<source srcset="img/menu__logo.svg">
 					<img src="img/menu__logo.svg" alt="">
 				</picture>
-			</button>
-		
+			</button>-->
 		<div class="menu__navigation">
-			<form action="/"><button class="menu__btn">Главная<div class="underline"></div></button></form>
-			<form action="about.html"><button class="menu__btn">О проекте<div class="underline"></div></button></form>
-			<form action="servers.html"><button class="menu__btn">Сервера<div class="underline"></div></button></form>
+			<a href="index.html" class="menu__btn">Главная<div class="underline"></div></a>
+			<a href="about.html" class="menu__btn">О проекте<div class="underline"></div></a>
+			<a href="servers.html" class="menu__btn">Сервера<div class="underline"></div></a>
+			<a href="#" class="menu__btn">Магазин<div class="underline"></div></a>
+			<a href="#" class="menu__btn">Форум<div class="underline"></div></a>
 		</div>
 		<div class="authorization">
-			<form action="#form">
-				<button class="menu__btn blue_btn">Войти</button>
-				<button class="menu__signin">
-					<picture>
-						<source srcset="img/menu_profile.png">
-						<img src="img/menu_profile.png" alt="">
-					</picture>
-				</button>
-				<button class="menu__btn registration_btn">Регистрация<div class="underline"></div></button>
-			</form>
+			<button class="menu__btn blue_btn">Войти</button>
+			<button class="menu__signin">
+				<picture>
+					<source srcset="img/menu_profile.png">
+					<img src="img/menu_profile.png" alt="">
+				</picture>
+			</button>
+			<button class="menu__btn registration_btn">Регистрация<div class="underline"></div></button>
 		</div>
 	</div>
 </div><div id="form" class="modal_wrapper">
@@ -109,37 +113,46 @@
 				</picture>
 			</div>
 			<div class="footer__social_links">
-				<form action="https://discord.gg/fnP3SRTJTq" target="_blank"><button class="discord soc_btn"></button></form>
-				<form action="https://t.me/battlepoints_gf" target="_blank"><button class="telegram soc_btn"></button></form>
-				<form action="https://www.youtube.com/channel/UC3scna7gf1Q1LZPTHafkPBQ" target="_blank"><button class="youtube soc_btn"></button></form>
+				<a href="https://discord.gg/azGhJPa8Nf" target="_blank" class="discord soc_btn"></a>
+				<a href="https://t.me/battlepoints_gf" target="_blank" class="telegram soc_btn"></a>
+				<a href="https://vk.com/battlepoints_gf" target="_blank" class="vkontakte soc_btn"></a>
+				<a href="#" target="_blank" class="twitter soc_btn"></a>
+				<a href="https://www.youtube.com/channel/UC3scna7gf1Q1LZPTHafkPBQ" target="_blank" class="youtube soc_btn"></a>
+				<a href="#" target="_blank" class="twitch soc_btn"></a>
 			</div>
 		</div>
 		<div class="footer__navigator">
 			<div class="column">
-				<form action="/"><button class="column__title">BattlePoints</button></form>
-				<form action="download.html"><button class="column__btn">Скачать</button></form>
-				<form action=""><button class="column__btn">Новости</button></form>
+				<a href="index.html" class="column__title">GameForce</a>
+				<a href="download.html" class="column__btn">Лаунчер</a>
+				<a href="#" class="column__btn">Новости</a>
+				<a href="#" class="column__btn">Магазин</a>
+				<a href="#" class="column__btn">Форум</a>
 			</div>
 			<div class="column">
-				<form action="servers.html"><button class="column__title">Сервера</button></form>
-				<form action="/"><button class="column__btn">BattlePoints</button></form>
-				<form action="https://mafiacraft.ru/"><button class="column__btn">MafiaCraft</button></form>
+				<a href="servers.html" class="column__title">Сервера</a>
+				<a href="#" class="column__btn">BattlePoints</a>
+				<a href="https://mafiacraft.ru/" class="column__btn">MafiaCraft</a>
+				<a href="#" class="column__btn">Vitacraft</a>
+				<a href="#" class="column__btn">MetroMine</a>
 			</div>
 			<div class="column">
-				<form action="about.html"><button class="column__title">О нас</button></form>
-				<form action="mission.html"><button class="column__btn">Манифест</button></form>
-				<form action="press.html"><button class="column__btn">Для СМИ</button></form>
-				<form action="contacts.html"><button class="column__btn">Контакты</button></form>
+				<a href="about.html" class="column__title">О нас</a>
+				<a href="mission.html" class="column__btn">Манифест</a>
+				<a href="press.html" class="column__btn">Для СМИ</a>
+				<a href="contacts.html" class="column__btn">Контакты</a>
 			</div>
 			<div class="column">
-				<form action="doc.html"><button class="column__title">Документы</button></form>
-				<form action="cookie.html"><button class="column__btn">Файлы Cookie</button></form>
-				<form action="license.html"><button class="column__btn">Лицензионное соглашение</button></form>
-				<form action="privacy.html"><button class="column__btn">Политика конфиденциальности</button></form>
+				<a href="doc.html" class="column__title">Правовая информация</a>
+				<a href="cookie.html" class="column__btn">Файлы Cookie</a>
+				<a href="license.html" class="column__btn">Лицензионное соглашение</a>
+				<a href="privacy.html" class="column__btn">Политика конфиденциальности</a>
 			</div>
 		</div>
-		<div class="footer__text">© 2019-2023 GameForse и BattlePoints, Все права защищены! Оригинальные права принадлежат <a href="https://www.minecraft.net" target="_blank">Mojang AB</a><br>Сайт разработан <a href="" target="_blank">Zoma</a> и создан <a href="" target="_blank">Margaw</a>.</div>
-		<div class="footer__text_mobile">GameForse и BattlePoints © 2019-2023</div>
+		<div class="footer__text">
+			<div class="footer__copyright"><h1>© 2023 GameForse</h1>Все права защищены! Мы предоставляем ознакомительный и бесплатный вариант игры Minecraft.<br>Оригинальные права принадлежат <a href="https://www.minecraft.net" target="_blank">Mojang AB</a></div>
+			<div class="footer__authors">Сайт разработан <a href="https://linktr.ee/zomapro" target="_blank">Zoma</a><br>и создан <a href="https://t.me/weyufuk" target="_blank">Margaw</a>.</div>
+		</div>
 	</div>
 </div>		</div>
 		<script src="js/script.js"></script>
