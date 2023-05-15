@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
 
-var document__menu = document.querySelector('#document__menu');
+/*var document__menu = document.querySelector('#document__menu');
 
 window.addEventListener('scroll', function() {
 	if (window.scrollY >= document__menu.offsetTop) {
@@ -31,5 +31,5 @@ window.addEventListener('scroll', function() {
 	if (footer.offsetTop - window.scrollY <= document__menu.offsetHeight) {
 		document__menu.style.top = footer.offsetTop - window.scrollY - document__menu.offsetHeight + 'px';
 	}
-});
+});*/
 
