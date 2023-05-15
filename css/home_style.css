@@ -185,6 +185,16 @@ body {
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /*latin*/
+/*@font-face{
+	font-family: 'Gemunu Libre';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: local('Inter'),
+		url('../fonts/GemunuLibre-SemiBold.woff2') format('woff2'),
+		url('../fonts/GemunuLibre-SemiBold.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}*/
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -487,16 +497,16 @@ body {
           align-items: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 956px) {
   .footer__1 {
     margin: 0 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer__social_links {
     margin: 24px 0 0;
@@ -510,7 +520,7 @@ body {
   transition: 0.12s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 956px) {
   .soc_btn {
     background-size: 85%;
   }
@@ -612,7 +622,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 956px) {
   .footer__navigator {
     margin: 38px 10px 0;
     -ms-grid-columns: none;
@@ -635,6 +645,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   white-space: nowrap;
+}
+@media (max-width: 956px) {
+  .column {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .column__title {
@@ -678,6 +695,16 @@ body {
   color: #ececec;
   border-bottom: 1px solid #ececec;
 }
+@media (max-width: 956px) {
+  .footer__text {
+    margin: 40px 10px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
 
 .footer__copyright {
   font-weight: 200;
@@ -689,11 +716,25 @@ body {
   font-size: 16px;
   line-height: 19px;
 }
+@media (max-width: 956px) {
+  .footer__copyright h1 {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 
 .footer__authors {
+  max-width: 158px;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+}
+@media (max-width: 956px) {
+  .footer__authors {
+    max-width: none;
+    margin: 60px 0 0;
+  }
 }
 
 .modal_wrapper {
