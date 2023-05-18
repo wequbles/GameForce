@@ -1093,9 +1093,11 @@ body {
   line-height: 29px;
 }
 
-.block:hover .block__title {
-  border-bottom: 2px solid #ECECEC;
-  margin-bottom: -2px;
+.block__title:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.25px;
+  text-underline-offset: 5px;
+  text-decoration-color: #ececec;
 }
 
 /*.block{}
